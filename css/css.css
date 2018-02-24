@@ -11,7 +11,7 @@ body {
 }
 
 #spacing-box-version-1 {
-	height: 150px;
+	height: 100%;
 	width: 100%;
 }
 
@@ -22,17 +22,34 @@ body {
 
 #button-version-1 {
 	display: inline-block;
-	height: 61px;
-	transform: skew(6deg) rotate(6deg);
-	margin-left: 185px;
-	margin-top: 47px;
-	opacity: 0;
-	width: 47px;
+    height: 9%;
+    transform: skew(6deg) rotate(6deg);
+    margin-left: 14.45%;
+    margin-top: 3.7%;
+    opacity: 0.5;
+    width: 3.7%;
 }
+
+#button2-version-1 {
+    display: inline-block;
+    height: 60px;
+    position: absolute;
+    transform: skew(6deg) rotate(6deg);
+    margin-left: 6px;
+    margin-top: 54px;
+    opacity: 0.5;
+    width: 47px;
+  }
 
 #button-version-2 {
 	height: 41px;
 	margin-left: 593px;
-	opacity: 0;
+	opacity: 0.5;
 	width: 30px;
+}
+
+@media (max-aspect-ratio: 860/485) {
+	body {
+		background-size: cover;
+	}
 }
