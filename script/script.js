@@ -1,0 +1,25 @@
+var button = document.getElementById("button-version-1");
+var spacingBoxOne = document.getElementById("spacing-box-version-1");
+var spacingBoxTwo = document.getElementById("spacing-box-version-2");
+
+function formatUrl(url) {
+	var regexPattern = /\"|\'|\)/g;
+	return url.split('/').pop().replace(regexPattern,'');
+}
+
+button.onclick = function() {
+	var currentBackgroundUrl = window.getComputedStyle(document.body).getPropertyValue('background-image');
+	var currentBackground = formatUrl(currentBackgroundUrl).toUpperCase();
+	switch (currentBackground) {
+		case "NK1.JPG":
+			document.body.style.backgroundImage = "url('img/NK2.jpg')";
+			document.getElementById("spacing-box-version-1").id = "spacing-box-version-2";
+			document.getElementById("button-version-1").id = "button-version-2";
+		break;
+		case "NK2.JPG":
+			document.body.style.backgroundImage = "url('img/NK1.jpg')";
+			document.getElementById("spacing-box-version-2").id = "spacing-box-version-1";
+			document.getElementById("button-version-2").id = "button-version-1";
+		break;
+	}
+}

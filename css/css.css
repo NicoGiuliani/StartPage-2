@@ -6,7 +6,33 @@ html, body {
 }
 
 body {
-	background-color: #ddeeff;
-	background-image: url("../img/NK.jpg");
+	background: #ddeeff url("../img/NK1.jpg");
 	background-size: 100% auto;
+}
+
+#spacing-box-version-1 {
+	height: 150px;
+	width: 100%;
+}
+
+#spacing-box-version-2 {
+	height: 41px;
+	margin-top: 225px;
+}
+
+#button-version-1 {
+	display: inline-block;
+	height: 61px;
+	transform: skew(6deg) rotate(6deg);
+	margin-left: 185px;
+	margin-top: 47px;
+	opacity: 0;
+	width: 47px;
+}
+
+#button-version-2 {
+	height: 41px;
+	margin-left: 593px;
+	opacity: 0;
+	width: 30px;
 }
