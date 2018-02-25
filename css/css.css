@@ -1,55 +1,81 @@
 html, body {
+	height: 607px; 
+	width: 1366px;
 	margin: 0;
 	padding: 0;
-	height: 100%;
-	width: 100%;
 }
 
 body {
-	background: #ddeeff url("../img/NK1.jpg");
+	background: #def url("../img/NK1.jpg");
 	background-size: 100% auto;
 }
 
 #spacing-box-version-1 {
-	height: 100%;
-	width: 100%;
+    height: 12.45%;
+    margin-top: 3.65%;
+    width: 100%;
 }
 
 #spacing-box-version-2 {
-	height: 41px;
-	margin-top: 225px;
+    height: 7.1%;
+    margin-top: 17.85%;
+}
+
+#spacing-box-version-3 {
+    height: 22.3%;
+    margin-top: 0.85%;
 }
 
 #button-version-1 {
-	display: inline-block;
-    height: 9%;
-    transform: skew(6deg) rotate(6deg);
+    height: 87.3%;
     margin-left: 14.45%;
-    margin-top: 3.7%;
     opacity: 0.5;
+    padding-top: 1.2%;
+    transform: skew(6deg) rotate(6deg);
     width: 3.7%;
 }
 
 #button2-version-1 {
-    display: inline-block;
-    height: 60px;
-    position: absolute;
-    transform: skew(6deg) rotate(6deg);
-    margin-left: 6px;
-    margin-top: 54px;
+    height: 86%;
+    margin: 0.1% 0 0 0.3%;
     opacity: 0.5;
-    width: 47px;
-  }
-
-#button-version-2 {
-	height: 41px;
-	margin-left: 593px;
-	opacity: 0.5;
-	width: 30px;
+    transform: skew(6deg) rotate(7deg);
+    width: 3.4%;
 }
 
-@media (max-aspect-ratio: 860/485) {
+#button-version-2 {
+	height: 100%;
+	margin-left: 47%;
+	opacity: 0.5;
+	width: 2.3%;
+}
+
+#button2-version-2 {
+	height: 100%;
+	margin-left: 0.33%;
+	opacity: 0.5;
+	width: 2.4%;
+}
+
+#button-version-3 {
+    height: 82%;
+    margin: 1.5% 0 0 78.25%;
+    opacity: 0.5;
+    transform: skew(-8deg) rotate(-7deg);
+    width: 5.5%;
+}
+
+#button2-version-3 {
+    height: 85%;
+    margin-left: 0.5%;
+    padding: 32px 0 9px 0;
+    opacity: 0.5;
+    transform: skew(-10deg) rotate(-9deg);
+    width: 5.8%;
+}
+
+@media (max-aspect-ratio) {
 	body {
-		background-size: cover;
+		background-size; 100% auto;
 	}
 }
