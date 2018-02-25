@@ -10,6 +10,10 @@ body {
 	background-size: 100% auto;
 }
 
+p {
+	margin: 0;
+}
+
 #spacing-box-version-1 {
     height: 12.45%;
     margin-top: 3.65%;
@@ -18,7 +22,7 @@ body {
 
 #spacing-box-version-2 {
     height: 7.1%;
-    margin-top: 17.85%;
+    margin-top: 4.8%;
 }
 
 #spacing-box-version-3 {
@@ -73,6 +77,60 @@ body {
     transform: skew(-10deg) rotate(-9deg);
     width: 5.8%;
 }
+
+
+
+#date_time_1 {
+    color: #fff;
+    font-size: 3em;
+	font-family: 'Nanum Brush Script', sans-serif;
+	margin-top: 35px;
+    opacity: 0.9;
+    text-align: center;
+    text-shadow: 2px 2px #f8a;
+    width: 35%;
+}
+
+#date_time_2 {
+	margin-top: 5%;
+    color: #fff;
+    font-size: 3em;
+	font-family: 'Nanum Brush Script', sans-serif;
+    opacity: 0.9;
+    text-align: center;
+    text-shadow: 2px 2px #f8a;
+}
+
+#date_time_3 {
+    color: #fff;
+    font-size: 3em;
+	font-family: 'Nanum Brush Script', sans-serif;
+	margin-top: 35px;
+    opacity: 0.9;
+    float: right;
+    text-align: center;
+    text-shadow: 2px 2px #f8a;
+    width: 30%;
+}
+
+#clock {
+	/*margin: 0;
+	color: #ffbfd9;
+	 Megrim, Orbitron, Libre Barcode 39 Extended Text 
+	font-size: 3.75em;  60px / 16px 
+	opacity: 0.75;
+	text-shadow: 1px 1px #fff;*/
+}
+
+#date {
+/*	margin: 0;
+	color: #fff;
+	font-family: "Orbitron", "Helvetica", sans-serif;
+	font-size: 3.125em; /* 50px / 16px */
+/* 	opacity: 0.7;*/*/
+}
+
+
 
 @media (max-aspect-ratio) {
 	body {
