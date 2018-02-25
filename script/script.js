@@ -35,6 +35,10 @@ button1.onclick = function() {
 		break;
 		case "NK3.JPG":
 			document.body.style.backgroundImage = "url('img/NK2.jpg')";
+			var spacingBox = document.getElementById("spacing-box-version-3");
+			document.body.removeChild(spacingBox);
+			document.getElementById("date_time_3").id = "date_time_2";
+			document.body.appendChild(spacingBox);
 			document.getElementById("spacing-box-version-3").id = "spacing-box-version-2";
 			document.getElementById("button-version-3").id = "button-version-2";
 			document.getElementById("button2-version-3").id = "button2-version-2";
@@ -55,6 +59,11 @@ button2.onclick = function() {
 		break;
 		case "NK2.JPG":
 			document.body.style.backgroundImage = "url('img/NK3.jpg')";
+			var date_time = document.getElementById("date_time_2");
+			document.body.removeChild(date_time);
+			date_time.id = "date_time_1";
+			document.body.appendChild(date_time);
+			date_time.id = "date_time_3";
 			document.getElementById("spacing-box-version-2").id = "spacing-box-version-3";
 			document.getElementById("button-version-2").id = "button-version-3";
 			document.getElementById("button2-version-2").id = "button2-version-3";
