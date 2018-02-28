@@ -3,8 +3,6 @@ var button2 = document.getElementById("button2-version-1");
 var spacingBoxOne = document.getElementById("spacing-box-version-1");
 var spacingBoxTwo = document.getElementById("spacing-box-version-2");
 
-// document.body.style.width = window.innerWidth + "px";
-
 function formatUrl(url) {
 	var regexPattern = /\"|\'|\)/g;
 	return url.split('/').pop().replace(regexPattern,'');

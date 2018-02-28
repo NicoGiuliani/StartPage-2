@@ -3,7 +3,60 @@ var button2 = document.getElementById("button2-version-1");
 var spacingBoxOne = document.getElementById("spacing-box-version-1");
 var spacingBoxTwo = document.getElementById("spacing-box-version-2");
 
-// document.body.style.width = window.innerWidth + "px";
+
+window.addEventListener("keydown", checkKeyPressed, false);
+window.addEventListener("keyup", keysReleased, true);
+
+var keys = [];
+
+function checkKeyPressed(e) {
+	keys[e.keyCode] = true;
+
+	//prevent default
+	if (keys[90]) {
+		if (keys[97]) {
+			window.open("https://www.facebook.com");
+			keys[90] = false;
+			keys[97] = false;
+		}
+		else if (keys[98]) {
+			window.open("https://www.hotmail.com");
+			keys[90] = false;
+			keys[98] = false;
+		}
+		else if (keys[99]) {
+			window.open("https://www.wikipedia.org");
+			keys[90] = false;
+			keys[99] = false;
+		}
+		
+	}
+	// else {
+
+	// 	if (keys[97]) {
+	// 		window.location.href = "https://www.facebook.com";
+	// 		keys[90] = false;
+	// 		keys[97] = false;
+	// 	}
+	// 	else if (keys[98]) {
+	// 		window.location.href("https://www.hotmail.com");
+	// 		keys[90] = false;
+	// 		keys[98] = false;
+	// 	}
+	// 	else if (keys[99]) {
+	// 		window.location.href("https://www.wikipedia.org");
+	// 		keys[90] = false;
+	// 		keys[99] = false;
+	// 	}
+	// }
+
+
+}
+
+function keysReleased(e) {
+    keys[e.keyCode] = false;
+}
+
 
 function formatUrl(url) {
 	var regexPattern = /\"|\'|\)/g;
@@ -86,6 +139,10 @@ button2.onclick = function() {
 	}
 }
 
+document.getElementById("link1").onclick = function() {
+	window.location.href = 'https://www.facebook.com';
+}
+
 function blink() {
 	var colon = document.getElementById("colon");
 	colon.style.visibility = colon.style.visibility == "hidden" ? "visible" : "hidden";
@@ -110,7 +167,7 @@ function updateClock() {
     if (hours < 10) { hours = "0" + hours; }
     if (minutes < 10) { minutes = "0" + minutes; }
     var time = hours + "<span id='colon'>:</span>" + minutes + timeOfDay;
-    var days = ["일요일","월요일","火曜日","화요일","목요일","금요일","토요일"]; // fix these
+    var days = ["일요일","월요일","화요일","화요일","목요일","금요일","토요일"]; // fix these
     var date_string = days[day] + " " + (month + 1) + "/" + date + "/" + year; 
     document.getElementById('clock').innerHTML = time;
     document.getElementById('date').innerHTML = date_string;
