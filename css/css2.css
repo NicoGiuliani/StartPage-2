@@ -121,10 +121,10 @@ p {
 nav {
     opacity: 0.5;
     top: 44px;
-    right: 172px;
+    right: 96px;
     display: block;
-    width: 47%;
-    height: 26%;
+    width: 632px;
+    height: 175px;
     background-color: red;
     position: absolute;
 }
