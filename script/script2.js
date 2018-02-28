@@ -7,48 +7,51 @@ var spacingBoxTwo = document.getElementById("spacing-box-version-2");
 window.addEventListener("keydown", checkKeyPressed, false);
 window.addEventListener("keyup", keysReleased, true);
 
+
 var keys = [];
+
+function clearKeys() {
+	for (var i = 0; i < 300; i++) {
+		keys[i] = false;
+	}
+}
 
 function checkKeyPressed(e) {
 	keys[e.keyCode] = true;
 
-	//prevent default
 	if (keys[90]) {
 		if (keys[97]) {
 			window.open("https://www.facebook.com");
+			clearKeys();
+		}
+		else if (keys[98]) {
+			window.open("https://www.hotmail.com");
+			clearKeys();
+		}
+		else if (keys[99]) {
+			window.open("https://www.wikipedia.org");
+			clearKeys();
+		}
+		
+	}
+	else {
+
+		if (keys[97]) {
+			window.location.href = "https://www.facebook.com";
 			keys[90] = false;
 			keys[97] = false;
 		}
 		else if (keys[98]) {
-			window.open("https://www.hotmail.com");
+			window.location.href("https://www.hotmail.com");
 			keys[90] = false;
 			keys[98] = false;
 		}
 		else if (keys[99]) {
-			window.open("https://www.wikipedia.org");
+			window.location.href("https://www.wikipedia.org");
 			keys[90] = false;
 			keys[99] = false;
 		}
-		
 	}
-	// else {
-
-	// 	if (keys[97]) {
-	// 		window.location.href = "https://www.facebook.com";
-	// 		keys[90] = false;
-	// 		keys[97] = false;
-	// 	}
-	// 	else if (keys[98]) {
-	// 		window.location.href("https://www.hotmail.com");
-	// 		keys[90] = false;
-	// 		keys[98] = false;
-	// 	}
-	// 	else if (keys[99]) {
-	// 		window.location.href("https://www.wikipedia.org");
-	// 		keys[90] = false;
-	// 		keys[99] = false;
-	// 	}
-	// }
 
 
 }
@@ -137,10 +140,6 @@ button2.onclick = function() {
 			document.getElementById("date_time_3").id = "date_time_1";
 		break;
 	}
-}
-
-document.getElementById("link1").onclick = function() {
-	window.location.href = 'https://www.facebook.com';
 }
 
 function blink() {
