@@ -94,7 +94,7 @@ button1.onclick = function() {
 			document.getElementById("button2-version-2").id = "button2-version-1";
 		break;
 		// Switch to page 2
-		case "NK3.JPG":
+		case "NK3A.JPG":
 			document.body.style.backgroundImage = "url('img/NK2.jpg')";
 			var spacingBox = document.getElementById("spacing-box-version-3");
 			document.body.removeChild(spacingBox);
@@ -113,7 +113,7 @@ button2.onclick = function() {
 	switch (currentBackground) {
 		// Switch to page 3
 		case "NK1.JPG":
-			document.body.style.backgroundImage = "url('img/NK3.jpg')";
+			document.body.style.backgroundImage = "url('img/NK3a.jpg')";
 			document.getElementById("spacing-box-version-1").id = "spacing-box-version-3";
 			document.getElementById("button-version-1").id = "button-version-3";
 			document.getElementById("button2-version-1").id = "button2-version-3";
@@ -121,7 +121,7 @@ button2.onclick = function() {
 		break;
 		// Switch to page 3
 		case "NK2.JPG":
-			document.body.style.backgroundImage = "url('img/NK3.jpg')";
+			document.body.style.backgroundImage = "url('img/NK3a.jpg')";
 			var date_time = document.getElementById("date_time_2");
 			document.body.removeChild(date_time);
 			date_time.id = "date_time_1";
@@ -132,7 +132,7 @@ button2.onclick = function() {
 			document.getElementById("button2-version-2").id = "button2-version-3";
 		break;
 		// Switch to page 1
-		case "NK3.JPG":
+		case "NK3A.JPG":
 			document.body.style.backgroundImage = "url('img/NK1.jpg')";
 			document.getElementById("spacing-box-version-3").id = "spacing-box-version-1";
 			document.getElementById("button-version-3").id = "button-version-1";
