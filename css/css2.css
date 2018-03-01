@@ -3,6 +3,7 @@ html, body {
 	margin: 0;
 	padding: 0;
     overflow: hidden;
+    width: 1366px;
 }
 
 body {
@@ -16,19 +17,19 @@ p {
 }
 
 #spacing-box-version-1 {
-    height: 10.4%;
-    margin-top: 3.65%;
-    width: 100%;
+    height: 55px;
+    margin-top: 51px;
+    width: 1366px;
 }
 
 #spacing-box-version-2 {
-    height: 6.2%;
-    margin-top: 4.2%;
+    height: 42px;
+    margin-top: 67px;
 }
 
 #spacing-box-version-3 {
-    height: 18.6%;
-    margin-top: 0.85%;
+    height: 134px;
+    margin-top: 12px;
 }
 
 #button-version-1, 
@@ -42,45 +43,45 @@ p {
 }
 
 #button-version-1 {
-    height: 87.3%;
-    margin-left: 14.45%;
-    padding-top: 1.2%;
+    height: 65px;
+    margin-left: 197px;
+    padding-top: 14px;
     transform: skew(6deg) rotate(6deg);
-    width: 3.7%;
+    width: 51px;
 }
 
 #button2-version-1 {
-    height: 86%;
-    margin: 0.1% 0 0 0.3%;
+    height: 64px;
+    margin: 4px 0 0 4px;
     transform: skew(6deg) rotate(7deg);
-    width: 3.45%;
+    width: 47px;
 }
 
 #button-version-2 {
-	height: 100%;
-	margin-left: 47%;
-	width: 2.3%;
+    height: 42px;
+    margin-left: 642px;
+    width: 31px;
 }
 
 #button2-version-2 {
-    height: 100%;
-    margin-left: 0.33%;
-    width: 2.38%;
+    height: 42px;
+    margin-left: 4.8px;
+    width: 32px;
 }
 
 #button-version-3 {
-    height: 82%;
-    margin: 1.5% 0 0 78.25%;
+    height: 109px;
+    margin: 21px 0 0 1069px;
     transform: skew(-9deg) rotate(-8deg);
-    width: 5.5%;
+    width: 75px;
 }
 
 #button2-version-3 {
-    height: 85%;
-    margin-left: 0.5%;
+    height: 115px;
+    margin-left: 6px;
     padding: 32px 0 9px 0;
     transform: skew(-10deg) rotate(-9deg);
-    width: 5.8%;
+    width: 81px;
 }
 
 #date_time_1 {
@@ -92,11 +93,11 @@ p {
     opacity: 0.9;
     text-align: center;
     text-shadow: 2px 2px #f8a;
-    width: 35%;
+    width: 476px;
 }
 
 #date_time_2 {
-	margin-top: 5%;
+	margin-top: 67px;
     color: #fff;
     font-size: 3em;
 	font-family: 'Nanum Brush Script', sans-serif;
@@ -114,36 +115,7 @@ p {
     float: right;
     text-align: center;
     text-shadow: 2px 2px #f8a;
-    width: 31%;
-}
-
-nav {
-    opacity: 0.5;
-    top: 44px;
-    right: 96px;
-    display: block;
-    width: 632px;
-    height: 175px;
-    background-color: red;
-    position: absolute;
-}
-
-
-
-/*#link1 {
-    cursor: pointer;
-    opacity: 0.5;
-    margin-top: 126px;
-    margin-left: 10px;
-    width: 40px;
-    height: 45px;
-    transform: skew(-12deg) rotate(-9deg);
-}*/
-
-#block2 {
-    width: 20px;
-    height: 20px;
-    background-color: yellow;
+    width: 415px;
 }
 
 @media (max-width: 1310px) {
